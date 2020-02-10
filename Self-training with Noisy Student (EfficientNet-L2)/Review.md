@@ -16,3 +16,7 @@
 - Unlabeled Image에 Noise Injection 했을 때의 장점
 1) Decision Function에서 Local Smootheness를 강화한다는 이점이 있음
 2) Data Augmentation을 사용하였을 때, 예를 들어 Student가 Tranlate를 할 때의 이미지가 Tranlate 되지 않은 이미지와 동일한 Class를 가져야 함. 이 Invariant Encourages는 Student Model이 Teacher Model을 뛰어 넘어 더 어려운 이미지를 예측 가능케 함
+
+
+
+# 작성중...
