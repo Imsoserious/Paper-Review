@@ -22,5 +22,12 @@ Student는 단일 모델처럼 행동 함. 다시 말해, Student는 보다 강�
 
 - Noisy Student는 Data Filtering, Balancing과 같은 추가 트릭으로 더 잘 작동 함. 특히 Teacher Model이 일반적으로 도메인 외부 이미지이므로 신뢰도가 낮은 이미지를 필터링. ImageNet의 모든 클래스에는 비슷한 수의 Label이 지정된 이미지가 있으므로 각 클래스에 대해 Label이없는 이미지 수의 균형을 조정해야 함. 이를 위해 이미지가 충분하지 않은 클래스에서 이미지를 복제. 이미지가 너무 많은 클래스의 경우 가장 Confidence한 이미지를 가져옴.
 
+***
 
-## 작성중..
+## Architecture
+- EfficientNet-L2는 EfficientNet-B7보다 더 Deep 하지만 낮은 Resolution을 사용
+- 많은 Label이 없는 이미지에 맞는 더 많은 매개 변수를 가짐 
+- 모델 크기가 크기 때문에 EfficientNet-L2의 Training Time은 EfficientNet-B7보다 약 5 배 더 걸림
+
+
+#### 작성중..
