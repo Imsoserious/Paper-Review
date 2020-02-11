@@ -17,6 +17,10 @@
 1) Decision Function에서 Local Smootheness를 강화한다는 이점이 있음
 2) Data Augmentation을 사용하였을 때, 예를 들어 Student가 Tranlate를 할 때의 이미지가 Tranlate 되지 않은 이미지와 동일한 Class를 가져야 함. 이 Invariant Encourages는 Student Model이 Teacher Model을 뛰어 넘어 더 어려운 이미지를 예측 가능케 함
 
+- Dropout 및 Stochastic Depth가 노이즈로 사용되는 경우, Teacher는 Inference Time (Psuedo Label을 생성하는 동안)에서 앙상블처럼 행동하지만 
+Student는 단일 모델처럼 행동 함. 다시 말해, 학생은 보다 강력한 앙상블 모델을 모방해야 함
+
+- Noisy Student는 Data Filtering, Balancing과 같은 추가 트릭으로 더 잘 작동 함. 특히 Teacher Model이 일반적으로 도메인 외부 이미지이므로 신뢰도가 낮은 이미지를 필터링. ImageNet의 모든 클래스에는 비슷한 수의 Label이 지정된 이미지가 있으므로 각 클래스에 대해 Label이없는 이미지 수의 균형을 조정해야 함. 이를 위해 이미지가 충분하지 않은 클래스에서 이미지를 복제. 이미지가 너무 많은 클래스의 경우 가장 Confidence한 이미지를 가져옴.
 
 
-## 작성중...
+## 작성중..
