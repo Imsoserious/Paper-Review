@@ -1,5 +1,10 @@
 # Paper-Review
 
+## 참여자
+- [ByeongIn-Moon](https://github.com/bluein), [MyungHoon-Jin](https://github.com/jinmang2), [YeWon-Lee](https://github.com/BerniceLee)
+
+***
+
 ## 작성 규칙
 *~이곳에 작성 규칙을 작성합니다~*
 
