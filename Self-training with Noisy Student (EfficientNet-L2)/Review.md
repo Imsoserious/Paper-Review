@@ -29,5 +29,18 @@ Student는 단일 모델처럼 행동 함. 다시 말해, Student는 보다 강�
 - 많은 Label이 없는 이미지에 맞는 더 많은 매개 변수를 가짐 
 - 모델 크기가 크기 때문에 EfficientNet-L2의 Training Time은 EfficientNet-B7보다 약 5 배 더 걸림
 
+***
+
+## The Importance of Noise in Self-training
+- Teacher Model에서 생성 된 Soft Psuedo Label을 사용하기 때문에, Student이 Teacher Model과 정확히 동일하게 훈련되면 Label이 없는 데이터의 교차 엔트로피 손실이 0이되고 Training 신호가 사라짐
+- 따라서 자연스럽게 발생하는 문제는 Student가 Soft Pseudo Label을 사용하여 Teacher보다 우수한 성과를 낼 수있는 이유
+- Teacher의 지식 만 배우는 것이 아니라 Student에게 추천해야한다는 가설을 세움
+- Label이 없는 데이터 양과 Teacher Model 정확도가 다른 두 가지 시나리오에서 Noise의 중요성을 연구
+- 두 경우 모두, Label이 있는 이미지를 유지하면서 Student Model을 학습 할 때 Label이 없는 이미지의 Augmentation, Stochastic Depth 및 Dropout을 점차적으로 제거
+- 이렇게 하면 Label이 없는 이미지에 대한 Noise의 영향을 Label이 있는 이미지에 Overfitting을 방지하는 영향으로부터 분리 할 수 ​​있음
+- 또한 Psuedo Label을 생성 할 때 Noise를 비활성화해야하는지 여부를 연구하기 위해 Noise가 많은 Teacher와 Noise가 없는 Teacher를 사용하는 것을 비교
+
+
+
 
 #### 작성중..
